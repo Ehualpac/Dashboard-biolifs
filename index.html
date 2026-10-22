@@ -3052,22 +3052,7 @@
             }).join('');
         }
 
-        function openMemberModal(memberId = null) {
-            const form = document.querySelector('#memberFormModal form');
-            form.reset();
-            document.getElementById('memId').value = '';
-
-            if (memberId) {
-                const mem = portalData.members.find(m => m.id === memberId);
-                if (mem) {
-                    document.getElementById('memberModalTitle').textContent = 'Editar Integrante';
-                    document.getElementById('memId').value = mem.id;
-                    document.getElementById('memName').value = mem.name;
-                    document.getElementById('memRole').value = mem.role;
-                    document.getElementById('memOrcid').value = mem.orcid;
-                    document.getElementById('memBio').value = mem.bio || '';
-                    document.getElementById('memPhotoUrl').value = mem.photo || '';
-                }
+        
             
 
         
