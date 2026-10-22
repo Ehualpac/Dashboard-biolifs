@@ -1233,26 +1233,7 @@
                             </div>
                         </div>
 
-                        <!-- Mini Widget QR Rápido en Hero -->
-                        <div class="bg-gradient-to-r from-emerald-950/90 to-slate-900 rounded-2xl p-4 border border-emerald-500/30 flex items-center gap-4">
-                            <div class="bg-white p-2 rounded-xl shrink-0 shadow-md cursor-pointer" onclick="openQrModal()" title="Clic para ampliar o imprimir">
-                                <canvas id="heroMiniQrCanvas" class="w-16 h-16 block"></canvas>
-                            </div>
-                            <div class="space-y-1">
-                                <div class="text-xs font-semibold text-emerald-300 flex items-center gap-1.5">
-                                    <i class="fa-solid fa-mobile-screen-button"></i> Acceso Instantáneo por QR
-                                </div>
-                                <p class="text-[11px] text-slate-300 leading-snug">
-                                    Escanea el código desde tu smartphone o genera tarjetas listas para congresos y puertas de laboratorio.
-                                </p>
-                                <button onclick="openQrModal()" class="text-[11px] font-mono text-emerald-400 hover:text-emerald-300 underline font-semibold">
-                                    Personalizar / Descargar PNG →
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                       
 
             <!-- Tarjetas KPI (Indicadores Clave del Grupo) -->
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-12">
@@ -2526,9 +2507,9 @@
     
 
     <!-- Notificación Toast Flotante -->
-    <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform transition-all duration-300 bg-slate-900 text-white px-4 py-3 rounded-2xl shadow-xl border border-emerald-500/40 flex items-center gap-3 text-xs sm:text-sm">
+    <div id="toastNotification" class="hidden class="fixed bottom-5 right-5 z-50 transform transition-all duration-300 bg-slate-900 text-white px-4 py-3 rounded-2xl shadow-xl border border-emerald-500/40 flex items-center gap-3 text-xs sm:text-sm">
         <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
-        <span id="toastMessage">Modo Edición desactivado.</span>
+        <span id="toastMessage"/span>
     </div>
 
     <!-- ==========================================
